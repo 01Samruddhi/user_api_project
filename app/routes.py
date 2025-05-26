@@ -19,7 +19,7 @@ def get_current_user(token: str = Depends(oauth2_scheme)):
     try:
         payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
         
-        # Debug logs
+        
         print("Token payload:", payload)
         print("Current UTC time:", datetime.utcnow())
         print("Token EXP (UTC):", datetime.utcfromtimestamp(payload["exp"]))

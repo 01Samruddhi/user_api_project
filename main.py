@@ -5,7 +5,7 @@ from app.routes import router
 app = FastAPI()
 app.include_router(router)
 
-# Customize Swagger UI for Bearer-only token
+
 def custom_openapi():
     if app.openapi_schema:
         return app.openapi_schema
