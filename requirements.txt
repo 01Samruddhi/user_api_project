@@ -4,4 +4,9 @@ pymongo
 pydantic
 email-validator
 faker
+#"fastapi[standard]"
+# jose[cryptography]
+# passlib[bcrypt]
+# openssl rand -hex 32 # used for generating secret key
+# swager, create excute, get access token,
 

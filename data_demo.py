@@ -4,8 +4,8 @@ faker = Faker()
 
 user = {
     "id": 1,
-    "name": "Daisy",
-    "email": "daisy@gmail.com"
+    "name": "Samruddhi",
+    "email": "samruddhi@gmail.com"
 }
 
 users = [
@@ -16,7 +16,7 @@ users = [
     },
 ]
 
-filtered = [u for u in users if u["name"]=="Daisy"]
+filtered = [u for u in users if u["name"]=="Samruddhi"]
 
 users.append({"id":3,"name":"Mapal","email":"leaf@gmail.com"})
 
